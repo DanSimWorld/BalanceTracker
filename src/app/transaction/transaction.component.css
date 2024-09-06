@@ -1,0 +1,83 @@
+/* General form styling */
+.transaction-container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
+}
+
+h2 {
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Form field styling */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+label {
+  font-size: 1.1em;
+  color: #555;
+  margin-bottom: 5px;  /* Space below the label */
+}
+
+input[type="number"], select, input[type="text"], input[type="date"], textarea {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1em;
+  width: 100%;  /* Ensure inputs take full width */
+  box-sizing: border-box;  /* Include padding and border in element's total width and height */
+}
+
+textarea {
+  height: 100px;  /* Increase height for multi-line text area */
+  resize: vertical;  /* Allow user to resize vertically */
+}
+
+/* Focus styling */
+input[type="number"]:focus, select:focus, input[type="text"]:focus, input[type="date"]:focus, textarea:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+/* Submit button */
+button[type="submit"] {
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1em;
+  cursor: pointer;
+  width: 100%;  /* Make button full-width */
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* Back to balance link */
+a.btn-back {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1.1em;
+  text-align: center;
+  cursor: pointer;
+}
+
+a.btn-back:hover {
+  background-color: #218838;
+}
